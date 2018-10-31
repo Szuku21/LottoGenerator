@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LottoNezetController">
+   <center>
+      <AnchorPane prefHeight="300.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane id="p_basePane" fx:id="p_basePane" prefHeight="300.0" prefWidth="400.0">
+               <children>
+                  <HBox layoutX="58.0" layoutY="135.0" prefHeight="31.0" prefWidth="325.0" spacing="60.0">
+                     <children>
+                        <Label id="l_label1" fx:id="l_label1" />
+                        <Label id="l_label2" fx:id="l_label2" />
+                        <Label id="l_label3" fx:id="l_label3" />
+                        <Label id="l_label4" fx:id="l_label4" />
+                        <Label id="l_label5" fx:id="l_label5" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="31.0" layoutY="76.0" prefHeight="25.0" prefWidth="324.0" spacing="40.0">
+                     <children>
+                        <TextField id="tf_input1" fx:id="tf_input1" prefHeight="25.0" prefWidth="36.0" />
+                        <TextField id="tf_input2" fx:id="tf_input2" prefHeight="25.0" prefWidth="36.0" />
+                        <TextField id="tf_input3" fx:id="tf_input3" prefHeight="25.0" prefWidth="36.0" />
+                        <TextField id="tf_input4" fx:id="tf_input4" prefHeight="25.0" prefWidth="36.0" />
+                        <TextField id="tf_input5" fx:id="tf_input5" prefHeight="25.0" prefWidth="36.0" />
+                     </children>
+                  </HBox>
+                  <Button id="b_sorsolas" fx:id="b_sorsolas" layoutX="163.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Sorsolás" />
+                  <Text layoutX="114.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Írj be 5 számot 1 és 90 között!" />
+                  <Text layoutX="166.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOTTÓ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Label id="l_eredmeny" fx:id="l_eredmeny" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="226.0" />
+               </children>
+            </Pane>
+            <Pane id="p_alertPane" fx:id="p_alertPane" layoutX="80.0" layoutY="50.0" prefHeight="200.0" prefWidth="250.0" visible="false">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#bdd9f5" height="165.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+                  <Label id="l_alertText" fx:id="l_alertText" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="34.0" prefHeight="105.0" prefWidth="234.0" text="anyád" textAlignment="CENTER" wrapText="true" />
+                  <Button id="b_alertOk" fx:id="b_alertOk" layoutX="109.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleAlertButtonAction" text="OK" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
